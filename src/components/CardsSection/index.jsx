@@ -261,7 +261,7 @@ export const  CardsSection = styled.div`
         .line-text2 {
             display: none;
         }
-
+        
         .line-text3 {
             display: none;
         }
@@ -322,6 +322,31 @@ export const  CardsSection = styled.div`
             left: 0vw;
             width: 55vw;
             min-height: 55vh;
+        }
+    }
+
+    @media (max-width: 600px) {
+        height: 260vh;
+
+        .divider {
+            height: 73vh;
+        }
+        .card {
+            width: 85vw;
+            min-height: 45vh;
+            top: -18%;
+        }
+
+        .card-2 {
+            width: 85vw;
+            min-height: 45vh;
+            top: -18%;
+        }
+
+        .card-3 {
+            width: 85vw;
+            min-height: 45vh;
+            top: -18%;
         }
     }
     
