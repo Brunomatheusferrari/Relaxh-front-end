@@ -262,7 +262,7 @@ export const  CardsSection = styled.div`
             display: none;
         }
 
-        <div className="line-text3"></div> {
+        .line-text3 {
             display: none;
         }
     }
