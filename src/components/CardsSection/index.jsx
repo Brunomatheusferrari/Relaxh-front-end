@@ -253,6 +253,18 @@ export const  CardsSection = styled.div`
         .line-text:nth-child(1) {
             top: 22%;
         }
+
+        .line-text {
+            display: none;
+        }
+
+        .line-text2 {
+            display: none;
+        }
+
+        <div className="line-text3"></div> {
+            display: none;
+        }
     }
 
     @media (max-width: 700px) {
