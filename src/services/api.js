@@ -2,7 +2,7 @@ import axios from "axios";
 import authServices from "./authServices";
 
 export const api = axios.create({
-    baseURL: "https://relaxh-server.herokuapp.com",
+    baseURL:  "https://relaxh-server.herokuapp.com",
     timeout: 1000,    
 }); 
 
