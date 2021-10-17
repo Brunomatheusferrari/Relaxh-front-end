@@ -14,6 +14,7 @@ import { DeliveryProvider } from "../contexts/deliveryContext";
 import { AdmWay } from "../pages/AdmWay";
 import { AdminLimpeza} from "../pages/AdminLimpeza";
 import { AdminDelivery } from "../pages/AdminDelivery";
+import { OtherServices } from "../pages/OtherServices";
 export const Routes = () => {
    return(
        <BrowserRouter>
@@ -24,6 +25,7 @@ export const Routes = () => {
                 <Route component = { SignUpContent } path="/cadastro" />
                 <Route component= { Sobre } path="/sobre" />
                 <Route component= { Precos } path="/preços" />
+                <Route component= { OtherServices } path="/outros" />
 
                 <PrivateRoute path="/serviços-limpeza" permissions={["admin", "user"]}>
                     <Limpeza/>
