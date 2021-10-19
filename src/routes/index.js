@@ -25,15 +25,15 @@ export const Routes = () => {
                 <Route component= { Sobre } path="/sobre" />
                 <Route component= { Precos } path="/preços" />
 
-                <PrivateRoute path="/serviços-limpeza" permissions={["admin", "user", "guest"]}>
+                <PrivateRoute path="/serviços-limpeza" permissions={["admin", "user"]}>
                     <Limpeza/>
                 </PrivateRoute>
 
-                <PrivateRoute path="/serviços" permissions={["admin", "user", "guest"]}>
+                <PrivateRoute path="/serviços" permissions={["admin", "user"]}>
                     <Servicos/>
                 </PrivateRoute>
 
-                <PrivateRoute path="/serviços-delivery" permissions={["admin", "user", "guest"]}>
+                <PrivateRoute path="/serviços-delivery" permissions={["admin", "user"]}>
                     <DeliveryProvider>
                         <Delivery />
                     </DeliveryProvider>
