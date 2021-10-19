@@ -85,7 +85,12 @@ export const ReserveSection = styled.div`
     }
 
     .reserve-button {
-        margin-top: 210px;
+        margin-top: 20px;
+        margin-right: 0;
+    }
+
+    .loginButtonStyle {
+        margin-right: 0;
     }
 
     @media (max-width: 1200px) {
