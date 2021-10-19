@@ -3,15 +3,13 @@ import { Route, Redirect } from "react-router-dom";
 import authServices from "../services/authServices";
 
 
-export async function PrivateRoute({ children, permissions, ...rest }) {  
-	const accessToken = authServices.getAccessToken();
-	
-	const user = await authServices.getUser(accessToken.sub)
+export function PrivateRoute({ children, permissions, ...rest }) {  
+	const accessToken = authServices.getAccessToken();	
 	
 	let userRole;
 
 	if (accessToken) {
-		userRole = user.role			
+		userRole = authServices.getRoleFromAccessToken(accessToken);				
 	}	
 
 	return (
