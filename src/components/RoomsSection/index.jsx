@@ -33,7 +33,8 @@ export const RoomsSection = styled.div`
 
     .room-content-container {
         z-index: 1000;
-        overflow-y: hidden;
+        overflow-y: hidden;    
+        padding: 20px;
     }
 
     .room-title {
@@ -43,6 +44,7 @@ export const RoomsSection = styled.div`
         margin: 10px;
         position: relative;
         top: -5%;
+        
     }
 
     .room-list {

@@ -241,9 +241,6 @@ export function Homepage(props) {
 
                 </HeaderContainer>
                 <IntroductSection>
-                    {/* <div className="lineTextCenter">
-                        <LineText title="Relaxh" />
-                    </div> */}
                     <div className="contentContainer" ref={introductionSectionRef}>
                             <p className="sectionTitle" ref={sloganRef}>Moderno, Simples e Prático.</p>
                             <img src="https://i.imgur.com/Yqg8FYM.png" className="logoRelaxh" ref={logoRef} />
@@ -359,7 +356,7 @@ export function Homepage(props) {
                 <Carousel autoPlay={true} showArrows={false} infiniteLoop={true}showThumbs={false} swipeable={true} showStatus={false} selectedItem={false}>
                     <div className = "head-text">
                         <div className = "head-image">
-                        <img src ="https://i.imgur.com/qS3pE3d.png" alt = "Freedom Blog" />
+                        <img src ="https://i.imgur.com/V1VK66h.png" alt = "Freedom Blog" />
                         </div>
                         <div class='text-on-image'>
                         <div className="room-content-container">
@@ -375,7 +372,7 @@ export function Homepage(props) {
                     </div>
                     <div className = "head-text">
                         <div className = "head-image">
-                        <img src ="https://i.imgur.com/p160pDl.png" alt = "Freedom Blog" />
+                        <img src ="https://i.imgur.com/A9bgxHF.png" alt = "Freedom Blog" />
                         </div>
                         <div class='text-on-image'>
                             <div className="room-content-container">
@@ -391,7 +388,7 @@ export function Homepage(props) {
                     </div>
                     <div className = "head-text">
                         <div className = "head-image">
-                        <img src ="https://i.imgur.com/3aFpI3A.png" alt = "Freedom Blog" />
+                        <img src ="https://i.imgur.com/kDKAvAA.png" alt = "Freedom Blog" />
                         </div>
                         <div class='text-on-image'>
                         <div className="room-content-container">
