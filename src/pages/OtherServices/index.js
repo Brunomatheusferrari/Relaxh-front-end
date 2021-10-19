@@ -14,7 +14,7 @@ export function OtherServices() {
             </div>
             <div className="card">
                 <div className="card-container">
-                    <h2 className="card-title">Psicina</h2>
+                    <h2 className="card-title">Piscina</h2>
                     <div className="card-white-line"></div>
                     <p className="card-text">Horário de Funcionamento: 9:00h - 19:00h <br />
                     <br />
