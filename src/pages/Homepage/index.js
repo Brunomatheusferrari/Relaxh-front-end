@@ -193,9 +193,6 @@ export function Homepage(props) {
                         <LoginButton>
                             <Link to="/entrar" label="entrar" className="loginButtonStyle">Login</Link>
                         </LoginButton>
-                        {/* <LoginButton>
-                            <Link to="/cadastro" label="signin" className="loginButtonStyle">SignIn</Link>
-                        </LoginButton> */}
                     </div>
                     :
                     <LoginButton onClick={handleClick}>
