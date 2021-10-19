@@ -241,9 +241,6 @@ export function Homepage(props) {
 
                 </HeaderContainer>
                 <IntroductSection>
-                    {/* <div className="lineTextCenter">
-                        <LineText title="Relaxh" />
-                    </div> */}
                     <div className="contentContainer" ref={introductionSectionRef}>
                             <p className="sectionTitle" ref={sloganRef}>Moderno, Simples e Prático.</p>
                             <img src="https://i.imgur.com/Yqg8FYM.png" className="logoRelaxh" ref={logoRef} />
