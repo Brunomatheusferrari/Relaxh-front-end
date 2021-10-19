@@ -9,7 +9,7 @@ export function OtherServices() {
         <OthersContainer>
         <div className="divider">
             <div className="line-text">
-                <p className="text">Psicina</p>
+                <p className="text">Piscina</p>
                 <div className="line" />
             </div>
             <div className="card">
