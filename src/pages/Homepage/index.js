@@ -359,7 +359,7 @@ export function Homepage(props) {
                 <Carousel autoPlay={true} showArrows={false} infiniteLoop={true}showThumbs={false} swipeable={true} showStatus={false} selectedItem={false}>
                     <div className = "head-text">
                         <div className = "head-image">
-                        <img src ="https://images.unsplash.com/photo-1560846288-b58bb7ae1083?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" alt = "Freedom Blog" />
+                        <img src ="https://i.imgur.com/qS3pE3d.png" alt = "Freedom Blog" />
                         </div>
                         <div class='text-on-image'>
                         <div className="room-content-container">
@@ -375,32 +375,31 @@ export function Homepage(props) {
                     </div>
                     <div className = "head-text">
                         <div className = "head-image">
-                        <img src ="https://images.unsplash.com/photo-1560846288-b58bb7ae1083?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" alt = "Freedom Blog" />
+                        <img src ="https://i.imgur.com/p160pDl.png" alt = "Freedom Blog" />
                         </div>
                         <div class='text-on-image'>
                             <div className="room-content-container">
                                     <h3 className="room-title">Premium</h3>
                                     <ul className="room-list">
                                         <li className="room-list-item">2 camas</li>
-                                        <li className="room-list-item">Banheira com Hidromassagem</li>
+                                        <li className="room-list-item">Banheira Comum</li>
                                         <li className="room-list-item">2 Banheiros</li>
-                                        <li className="room-list-item">2 Televisões</li>
+                                        <li className="room-list-item">1 Televisões</li>
                                     </ul>
                                 </div>
                         </div>
                     </div>
                     <div className = "head-text">
                         <div className = "head-image">
-                        <img src ="https://images.unsplash.com/photo-1560846288-b58bb7ae1083?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80" alt = "Freedom Blog" />
+                        <img src ="https://i.imgur.com/3aFpI3A.png" alt = "Freedom Blog" />
                         </div>
                         <div class='text-on-image'>
                         <div className="room-content-container">
-                                <h3 className="room-title">Standart</h3>
+                                <h3 className="room-title">Standard</h3>
                                 <ul className="room-list">
-                                    <li className="room-list-item">2 camas</li>
-                                    <li className="room-list-item">Banheira com Hidromassagem</li>
-                                    <li className="room-list-item">2 Banheiros</li>
-                                    <li className="room-list-item">2 Televisões</li>
+                                    <li className="room-list-item">1 camas</li>
+                                    <li className="room-list-item">1 Banheiros</li>
+                                    <li className="room-list-item">1 Televisões</li>
                                 </ul>
                             </div>
                         </div>
