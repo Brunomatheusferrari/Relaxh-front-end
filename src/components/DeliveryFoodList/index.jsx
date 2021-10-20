@@ -17,6 +17,15 @@ export const DeliveryFoodList = styled.div`
 
     .button {
         padding: 10px;
+        background-color: transparent;
+        border: none;
+        font-size: 30px;
+        border-radius: 50%;
+        height: 55px;
+        width: 50px;
+        border: 3px solid white;
+        color: white;
+        font-weight: 5px;
     }
 
     .number {

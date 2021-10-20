@@ -53,6 +53,7 @@ export const DeliveryModal = styled.div`
         cursor: pointer;
     }
 
+
     .headerModalObjects {
         width: 60vw;
         height: 10vh;
@@ -98,6 +99,8 @@ export const DeliveryModal = styled.div`
     .sectionsTitle {
         padding-bottom: 15px;
         border-bottom: 1px solid lightgray;
+        color: white;
+        font-size: 30px;
     }
 
     @media (max-width: 607px) {
