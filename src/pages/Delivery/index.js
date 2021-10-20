@@ -40,6 +40,7 @@ export function Delivery(props) {
         getComidas()
         getPedidos()
 
+        
         return () => cancelTokenSource.cancel();
     }, []);
 

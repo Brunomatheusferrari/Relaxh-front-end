@@ -50,12 +50,20 @@ async function getComida(id){
 }
 
 async function postServico({id_quarto, tipo, comidas, descricao, horario}){
-
-    console.log(id_quarto, tipo, comidas, descricao, horario)
     try {
         const servico = await api.post("/service", {id_quarto, tipo, comidas, descricao, horario})
         
         return servico
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+async function getQuarto(id){
+    try {
+        const quarto = await api.get("/hotel/quartos/get", {params: {id}})
+
+        return quarto
     } catch (error) {
         console.log(error)
     }
@@ -66,7 +74,8 @@ const serviceServices = {
     getQuartoUser,
     getPedidosUser,
     getComida,
-    postServico
+    postServico,
+    getQuarto
 }
 
 export default serviceServices;

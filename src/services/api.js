@@ -18,7 +18,7 @@ api.interceptors.response.use(function (response) {
     return response;
   }, async function (error) {
     const originalRequest = error.config;
-    const loginUrl = `http://localhost:3001/auth/login`;
+    const loginUrl = `https://relaxh-server.herokuapp.com/auth/login`;
     const refreshTokenUrl = "/auth/refresh";    
     if (error.response.status === 401 && originalRequest.url !== refreshTokenUrl && error.request.responseURL !== loginUrl) {      
       await authServices.refreshToken();      
