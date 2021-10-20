@@ -32,7 +32,7 @@ export function Servicos() {
                       </CardLimpeza>
                     </Link>
 
-                    <Link to="/serviço-outros" style={{textDecoration: "none"}}>
+                    <Link to="/outros" style={{textDecoration: "none"}}>
                       <CardOutros>
                           <div className="leaves1"></div>
                           <img src="https://i.imgur.com/7aHGEs7.png" alt="Fork and Knife" className="deliveryCardPng"/>
