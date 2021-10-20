@@ -1,25 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { AdminLContainer } from "../../components/AdminLContainer";
 import { AdminTable } from "../../components/AdminDContainer/AdminTable";
 import { DivPedido } from "../../components/AdminDContainer/DivPedido";
 import userServices from "../../services/userServices";
 
 export function AdminLimpeza({userRole}) {
-    if (!userRole === "admin") {
-      return window.location.replace("/")
-    }
+  const [pedidos, setPedidos] = useState([])
 
-    async function getLimpeza(){
-      try {
-        const res = await userServices.getLimpeza()
-        console.log(res)
-      } catch (error) {
-        console.log(error)
+    useEffect(() => {
+      async function getLimpeza(){
+        try {
+          const res = (await userServices.getServicos()).data
+
+          setPedidos(res)
+        } catch (error) {
+          console.log(error)
+        }
       }
-    }
 
-    getLimpeza()
-    
+      getLimpeza()
+    },[])
 
     return(
       <AdminLContainer>
@@ -32,15 +32,31 @@ export function AdminLimpeza({userRole}) {
               <h3 className="headerText">Nº Quarto</h3>
               <h3 className="headerText">Concluído</h3>
             </div>
-            <DivPedido>
-              <p className="serviceTitle">Limpeza</p>
-              <div className="verticalLine" />
-              <p className="serviceHorario">19:00</p>
-              <div className="verticalLine2" />
-              <p className="serviceRoomNumber">519</p>
-              <div className="verticalLine3" />
-              <input type="checkbox" className="serviceCheckBox" />
-            </DivPedido>            
+            
+            {
+              pedidos ?
+                pedidos.map(pedido => (
+                  <>
+                    {
+                      pedido.tipo === "Limpeza" &&
+                        <DivPedido key={pedido.id}>
+                          <p className="serviceTitle">{pedido.descricao}</p>
+                          <div className="verticalLine" />
+                          <p className="serviceHorario">{`${pedido.horario[11]}${pedido.horario[12]}${pedido.horario[13]}${pedido.horario[14]}${pedido.horario[15]}`}</p>
+                          <div className="verticalLine2" />
+                          <p className="serviceRoomNumber">{(Math.random()  * (700 - 100) + 100).toFixed()}</p>
+                          <div className="verticalLine3" />
+                          <input type="checkbox" className="serviceCheckBox" />
+                      </DivPedido>     
+                      }
+                  </>
+       
+                ))
+              : 
+              <p>Não ha pedidos</p>
+            }
+
+           
           </AdminTable>
 
           <div className="leaves1" />
